@@ -3,6 +3,8 @@
 
 /bootstrap/compiled.php
 /vendor
+/storage
+node_modules/
 composer.phar
 .idea
 .env
