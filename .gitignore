@@ -1,0 +1,13 @@
+.DS_Store
+*.log
+
+/bootstrap/compiled.php
+/vendor
+composer.phar
+.idea
+.env
+.env.*.php
+.env.php
+sftp-config.json
+selenium.php
+composer.lock
