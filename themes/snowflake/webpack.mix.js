@@ -11,11 +11,17 @@ let mix = require('laravel-mix');
  |
  */
 
+var scssPaths = [
+	'node_modules/foundation-sites/scss',
+	'node_modules/@wouterflorijn',
+	'vendor'
+];
+
 mix.setPublicPath('assets/build');
 //mix.setResourceRoot('assets');
 
-mix.js('assets/js/app.js', 'app.js');
-//mix.sass('src/app.scss', 'dist/');
+mix.js('assets/js/app.js', 'js/app.js');
+mix.sass('assets/scss/app.scss', 'css/app.css', { includePaths: scssPaths });
 
 // Full API
 // mix.js(src, output);
