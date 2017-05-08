@@ -1,0 +1,9 @@
+@function image($path)
+{
+	@return url("../../img/#{$path}");
+}
+
+@function font($path)
+{
+	@return url("../../fonts/#{$path}");
+}

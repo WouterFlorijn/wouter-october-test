@@ -17,8 +17,16 @@ var scssPaths = [
 	'vendor'
 ];
 
+mix.disableNotifications();
 mix.setPublicPath('assets/build');
 //mix.setResourceRoot('assets');
+mix.options({
+	extractVueStyles: false,
+	processCssUrls: false,
+	purifyCss: false,
+	uglify: {},
+	postCss: []
+});
 
 mix.js('assets/js/app.js', 'js/app.js');
 mix.sass('assets/scss/app.scss', 'css/app.css', { includePaths: scssPaths });
