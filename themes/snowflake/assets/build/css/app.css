@@ -494,7 +494,7 @@ body {
   background: #FFFFFF;
   font-family: "Pier Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.25;
   color: #303030;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -557,7 +557,7 @@ pre {
 }
 
 .row {
-  max-width: 75rem;
+  max-width: 100rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2435,7 +2435,7 @@ a img {
 
 hr {
   clear: both;
-  max-width: 75rem;
+  max-width: 100rem;
   height: 0;
   margin: 1.25rem auto;
   border-top: 0;
@@ -2537,7 +2537,7 @@ kbd {
 
 .lead {
   font-size: 125%;
-  line-height: 1.6;
+  line-height: 1.25;
 }
 
 .stat {
@@ -3472,7 +3472,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   position: relative;
 }
 
-.pos-absolute, .center-v, .center-h, .center {
+.pos-absolute, .center-v, .hero-content, .center-h, .center {
   position: absolute;
 }
 
@@ -3480,7 +3480,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   position: fixed;
 }
 
-.center-v {
+.center-v, .hero-content {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3701,4 +3701,76 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.default-case, h2.default-case, h3.default-case, h4.default-case, h5.default-case, h6.default-case {
   text-transform: none;
+}
+
+.hero {
+  display: block;
+  position: relative;
+  height: 100vh;
+  background-color: #D0D0D0;
+  background-image: url("../../img/textures/noise.png");
+}
+
+.hero-container {
+  position: relative;
+  height: 100%;
+}
+
+.hero-header {
+  margin-bottom: 16px;
+}
+
+.hero-dash {
+  display: inline-block;
+  width: 32px;
+  height: 8px;
+  margin-bottom: 16px;
+}
+
+.hero-dash:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.hero-subheader {
+  margin-bottom: 8px;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  height: 90%;
+  max-width: none;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .hero-image {
+    display: none;
+  }
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-small {
+  height: 64px;
+  width: 64px;
+}
+
+.icon-large {
+  height: 192px;
+  width: 192px;
+}
+
+.icon-space {
+  margin-bottom: 32px;
+}
+
+.icon-space:not(:first-of-type) {
+  margin-left: 16px;
+}
+
+.icon-space:not(:last-of-type) {
+  margin-right: 16px;
 }

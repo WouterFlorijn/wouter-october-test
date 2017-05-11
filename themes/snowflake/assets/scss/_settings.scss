@@ -47,8 +47,8 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
-$global-lineheight: 1.5;
+$global-width: rem-calc(1600);
+$global-lineheight: 1.25;
 $foundation-palette: (
   primary:   #0AA5CC,
   secondary: #767676,
@@ -182,7 +182,7 @@ $abbr-underline: 1px dotted $black;
 // ---------------------
 
 $lead-font-size: $global-font-size * 1.25;
-$lead-lineheight: 1.6;
+$lead-lineheight: $global-lineheight;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
