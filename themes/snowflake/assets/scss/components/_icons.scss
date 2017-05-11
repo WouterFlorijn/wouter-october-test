@@ -1,0 +1,24 @@
+.icon {
+	display: inline-block;
+}
+
+.icon-small {
+	height: space(large);
+	width: space(large);
+}
+
+.icon-large {
+	height: 192px;
+	width: 192px;
+}
+
+.icon-space {
+	margin-bottom: space(medium);
+
+	&:not(:first-of-type) {
+		margin-left: space(small);
+	}
+	&:not(:last-of-type) {
+		margin-right: space(small);
+	}
+}

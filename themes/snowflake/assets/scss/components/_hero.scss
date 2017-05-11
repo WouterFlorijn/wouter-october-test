@@ -1,0 +1,48 @@
+.hero {
+	display: block;
+	position: relative;
+	height: 100vh;
+
+	background-color: $light-gray;
+	background-image: image('textures/noise.png');
+}
+
+.hero-container {
+	position: relative;
+	height: 100%;
+}
+
+.hero-content {
+	@extend .center-v;
+}
+
+.hero-header {
+	margin-bottom: space(small);
+}
+
+.hero-dash {
+	display: inline-block;
+	width: space(medium);
+	height: space(tiny);
+	margin-bottom: space(small);
+
+	&:not(:last-of-type) {
+		margin-right: space(small);
+	}
+}
+
+.hero-subheader {
+	margin-bottom: space(tiny);
+}
+
+.hero-image {
+	position: absolute;
+	bottom: 0;
+	right: space(medium);
+	height: 90%;
+	max-width: none;
+
+	@include breakpoint(medium down) {
+		display: none;
+	}
+}
