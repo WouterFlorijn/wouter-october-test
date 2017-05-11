@@ -3,6 +3,85 @@ url = "/"
 layout = "main"
 ==
 
-<div class="row column">
-	<h1>Test</h1>
+<div class="hero">
+	<div class="row column hero-container">
+		<img src="{{ 'hero.png'|media }}" alt="That's me" class="hero-image">
+
+		<div class="hero-content">
+			<h1 class="hero-header">Wouter Florijn</h1>
+			<div class="hero-dash bg-alert"></div><div class="hero-dash bg-primary"></div><div class="hero-dash bg-success"></div>
+			<h4 class="hero-subheader">Webdevelopment</h4>
+			<h4 class="hero-subheader">Design</h4>
+			<h4 class="hero-subheader">IT Consulting</h4>
+		</div>
+	</div>
+</div>
+
+
+<div class="bg-primary color-white padding-top-large padding-bottom-large">
+	<div class="row">
+		<div class="column small-12 medium-6">
+			<h2>About me</h2>
+
+			<p class="lead">
+				I wanted to create my own company for as long as I can remember. I loved the idea of just working on my own stuff without anybody telling me what to do. By now, I've co-founded a startup and started my own freelance company, so let's just say I stuck to my plan.
+			</p>
+
+			<p class="lead">
+				I love being versatile. Besides being a programmer at heart, I have a creative mind and am always looking for ways to apply it as an entrepreneur or designer. I developed this side through hobbies and work, while my Computer Science studies have provided me with scientific knowledge and programming skills.
+			</p>
+
+			<p class="lead">
+				With my broad set of skills, I can take on any project from start to finish.
+			</p>
+		</div>
+		<div class="column small-12 medium-6 text-right">
+			<h2>Info</h2>
+			
+			<div>
+				<img src="{{ 'assets/img/icons/icon-email.svg'|theme }}" alt="" class="icon icon-small icon-space">
+				<img src="{{ 'assets/img/icons/icon-location.svg'|theme }}" alt="" class="icon icon-small icon-space">
+				<img src="{{ 'assets/img/icons/icon-education.svg'|theme }}" alt="" class="icon icon-small icon-space">
+				<img src="{{ 'assets/img/icons/icon-birthday.svg'|theme }}" alt="" class="icon icon-small icon-space">
+			</div>
+
+			<h2>Hobbies</h2>
+
+			<div>
+				<img src="{{ 'assets/img/icons/icon-music.svg'|theme }}" alt="" class="icon icon-small icon-space">
+				<img src="{{ 'assets/img/icons/icon-drums.svg'|theme }}" alt="" class="icon icon-small icon-space">
+				<img src="{{ 'assets/img/icons/icon-drawing.svg'|theme }}" alt="" class="icon icon-small icon-space">
+				<img src="{{ 'assets/img/icons/icon-video.svg'|theme }}" alt="" class="icon icon-small icon-space">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="padding-top-large text-center">
+	<div class="row column">
+		<h2 class="margin-bottom-large">What do I do?</h2>
+	</div>
+
+	<div class="row">
+		<div class="column small-12 medium-6 large-3">
+			<img src="{{ 'assets/img/icons/icon-consulting.svg'|theme }}" alt="" class="icon icon-large margin-bottom-medium">
+			<h3 class="margin-bottom-large">Consulting</h3>
+		</div>
+
+		<div class="column small-12 medium-6 large-3">
+			<img src="{{ 'assets/img/icons/icon-design.svg'|theme }}" alt="" class="icon icon-large margin-bottom-medium">
+			<h3 class="margin-bottom-large">Design</h3>
+		</div>
+
+		<div class="column small-12 medium-6 large-3">
+			<img src="{{ 'assets/img/icons/icon-development.svg'|theme }}" alt="" class="icon icon-large margin-bottom-medium">
+			<h3 class="margin-bottom-large">Development</h3>
+		</div>
+
+		<div class="column small-12 medium-6 large-3">
+			<img src="{{ 'assets/img/icons/icon-support.svg'|theme }}" alt="" class="icon icon-large margin-bottom-medium">
+			<h3 class="margin-bottom-large">Support</h3>
+		</div>
+	</div>
+
 </div>
