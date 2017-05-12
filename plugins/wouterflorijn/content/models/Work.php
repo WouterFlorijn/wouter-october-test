@@ -15,8 +15,12 @@ class Work extends Model
     public $rules = [
     ];
 
+    public $attachOne = [
+        'image' => 'System\Models\File'
+    ];
+
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'wouterflorijn_content_';
+    public $table = 'wouterflorijn_content_work';
 }

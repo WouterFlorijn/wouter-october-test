@@ -1,0 +1,11 @@
+name: Work
+modelClass: WouterFlorijn\Content\Models\Work
+form: $/wouterflorijn/content/models/work/fields.yaml
+defaultRedirect: wouterflorijn/content/work
+create:
+    redirect: 'wouterflorijn/content/work/update/:id'
+    redirectClose: wouterflorijn/content/work
+update:
+    redirect: wouterflorijn/content/work
+    redirectClose: wouterflorijn/content/work
+preview: {  }

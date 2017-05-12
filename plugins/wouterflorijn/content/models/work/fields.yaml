@@ -1,0 +1,49 @@
+fields:
+    name:
+        label: 'wouterflorijn.content::lang.plugin.name'
+        oc.commentPosition: ''
+        span: full
+        required: 1
+        type: text
+    description:
+        label: 'wouterflorijn.content::lang.plugin.description'
+        size: large
+        oc.commentPosition: ''
+        span: full
+        type: richeditor
+    url:
+        label: 'wouterflorijn.content::lang.plugin.url'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    title:
+        label: 'wouterflorijn.content::lang.plugin.job_title'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    started_at:
+        label: 'wouterflorijn.content::lang.plugin.started_at'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    ended_at:
+        label: 'wouterflorijn.content::lang.plugin.ended_at'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    classes:
+        label: 'wouterflorijn.content::lang.plugin.css_classes'
+        oc.commentPosition: ''
+        span: full
+        type: text
+    image:
+        label: 'wouterflorijn.content::lang.plugin.image'
+        span: full
+        oc.commentPosition: ''
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

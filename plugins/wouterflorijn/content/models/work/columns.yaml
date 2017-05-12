@@ -1,0 +1,6 @@
+columns:
+    name:
+        label: 'wouterflorijn.content::lang.name'
+        type: text
+        searchable: true
+        sortable: true

@@ -1,0 +1,4 @@
+title: Work
+modelClass: WouterFlorijn\Content\Models\Work
+toolbar:
+    buttons: reorder_toolbar

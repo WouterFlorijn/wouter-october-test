@@ -4,3 +4,8 @@ plugin:
     author: 'Wouter Florijn'
     icon: oc-icon-briefcase
     homepage: ''
+navigation:
+    work:
+        label: 'wouterflorijn.content::lang.plugin.work'
+        url: wouterflorijn/content/work
+        icon: icon-briefcase

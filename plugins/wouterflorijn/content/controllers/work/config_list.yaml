@@ -1,0 +1,11 @@
+title: Work
+modelClass: WouterFlorijn\Content\Models\Work
+list: $/wouterflorijn/content/models/work/columns.yaml
+recordUrl: 'wouterflorijn/content/work/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
