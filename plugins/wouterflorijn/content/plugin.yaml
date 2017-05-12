@@ -1,0 +1,6 @@
+plugin:
+    name: 'wouterflorijn.content::lang.plugin.name'
+    description: 'wouterflorijn.content::lang.plugin.description'
+    author: 'Wouter Florijn'
+    icon: oc-icon-briefcase
+    homepage: ''

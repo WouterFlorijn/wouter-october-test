@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table wouterflorijn_content_'
+    - builder_table_create_wouterflorijn_content_.php
+1.0.3:
+    - 'Updated table wouterflorijn_content_'
+    - builder_table_update_wouterflorijn_content_work.php
