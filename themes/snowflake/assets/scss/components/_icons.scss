@@ -3,13 +3,13 @@
 }
 
 .icon-small {
-	height: space(large);
-	width: space(large);
+	height: $tile-small-size;
+	width: $tile-small-size;
 }
 
 .icon-large {
-	height: 192px;
-	width: 192px;
+	height: $tile-large-size;
+	width: $tile-large-size;
 }
 
 .icon-space {

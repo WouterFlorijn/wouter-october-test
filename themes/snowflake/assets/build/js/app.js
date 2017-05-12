@@ -76,6 +76,8 @@ __webpack_require__(2);
 $(function () {
 	$(document).foundation();
 });
+
+__webpack_require__(9);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
@@ -20590,6 +20592,24 @@ module.exports = g;
 __webpack_require__(0);
 module.exports = __webpack_require__(1);
 
+
+/***/ }),
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
+/***/ (function(module, exports) {
+
+var container = $('.work-container');
+
+$('.work-tile').on('click', function (event) {
+	var x = event.pageX - container.offset().left;
+	var y = event.pageY - container.offset().top;
+
+	var id = $(this).data('work');
+	var overlay = container.find('.work-overlay[data-work="' + id + '"]');
+	overlay.addClass('open');
+});
 
 /***/ })
 /******/ ]);

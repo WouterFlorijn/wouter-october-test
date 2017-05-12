@@ -11,6 +11,16 @@ fields:
         oc.commentPosition: ''
         span: full
         type: richeditor
+    image:
+        label: 'wouterflorijn.content::lang.plugin.image'
+        oc.commentPosition: ''
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
     url:
         label: 'wouterflorijn.content::lang.plugin.url'
         oc.commentPosition: ''
@@ -32,18 +42,18 @@ fields:
         oc.commentPosition: ''
         span: auto
         type: text
+    background_color:
+        label: 'wouterflorijn.content::lang.plugin.background_color'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    text_color:
+        label: 'wouterflorijn.content::lang.plugin.text_color'
+        oc.commentPosition: ''
+        span: auto
+        type: text
     classes:
         label: 'wouterflorijn.content::lang.plugin.css_classes'
         oc.commentPosition: ''
         span: full
         type: text
-    image:
-        label: 'wouterflorijn.content::lang.plugin.image'
-        span: full
-        oc.commentPosition: ''
-        mode: file
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
-        type: fileupload

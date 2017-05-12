@@ -1,0 +1,39 @@
+.work-container {
+	position: relative;
+	display: block;
+}
+
+.work-tile {
+	@extend .round;
+
+	position: relative;
+	display: block;
+	width: $tile-large-size;
+	height: $tile-large-size;
+	margin: auto;
+
+	cursor: pointer;
+}
+
+.work-overlay {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding-top: space(large);
+	padding-bottom: space(large);
+
+	clip-path: circle(0 at center);
+	opacity: 0;
+	pointer-events: none;
+
+	transition: all 1000ms ease;
+
+	&.open {
+		clip-path: circle(100% at center);
+		opacity: 1;
+		pointer-events: auto;
+	}
+}

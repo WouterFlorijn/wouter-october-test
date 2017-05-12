@@ -9,5 +9,7 @@
         'css_classes' => 'CSS classes',
         'image' => 'Image',
         'work' => 'Work',
+        'background_color' => 'Background color',
+        'text_color' => 'Text color',
     ],
 ];
