@@ -2420,13 +2420,13 @@ h6 {
 
 a {
   line-height: inherit;
-  color: #0AA5CC;
+  color: #4F8FBF;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover, a:focus {
-  color: #098eaf;
+  color: #3e7caa;
 }
 
 a img {
@@ -3516,11 +3516,11 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 
 .color-primary {
-  color: #0AA5CC;
+  color: #4F8FBF;
 }
 
 .bg-primary {
-  background-color: #0AA5CC;
+  background-color: #4F8FBF;
 }
 
 .color-secondary {
@@ -3532,27 +3532,27 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 
 .color-success {
-  color: #09BF0C;
+  color: #3FC141;
 }
 
 .bg-success {
-  background-color: #09BF0C;
+  background-color: #3FC141;
 }
 
 .color-warning {
-  color: #ffae00;
+  color: #E0AE16;
 }
 
 .bg-warning {
-  background-color: #ffae00;
+  background-color: #E0AE16;
 }
 
 .color-alert {
-  color: #E52416;
+  color: #E53A25;
 }
 
 .bg-alert {
-  background-color: #E52416;
+  background-color: #E53A25;
 }
 
 .color-light-gray {
@@ -3673,7 +3673,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url("../../fonts/pier-sans.otf");
+  src: url("../../fonts/pier-sans-light.otf");
 }
 
 @font-face {
@@ -3685,7 +3685,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 @font-face {
   font-family: 'Pier Sans';
   font-style: italic;
-  src: url("../../fonts/pier-sans-italic.otf");
+  src: url("../../fonts/pier-sans-light-italic.otf");
 }
 
 @font-face {
@@ -3693,14 +3693,6 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   font-weight: bold;
   font-style: italic;
   src: url("../../fonts/pier-sans-bold-italic.otf");
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-}
-
-h1.default-case, h2.default-case, h3.default-case, h4.default-case, h5.default-case, h6.default-case {
-  text-transform: none;
 }
 
 .hero {
