@@ -2420,13 +2420,13 @@ h6 {
 
 a {
   line-height: inherit;
-  color: #4F8FBF;
+  color: #4F9EBF;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover, a:focus {
-  color: #3e7caa;
+  color: #3e8aaa;
 }
 
 a img {
@@ -3516,11 +3516,11 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 
 .color-primary {
-  color: #4F8FBF;
+  color: #4F9EBF;
 }
 
 .bg-primary {
-  background-color: #4F8FBF;
+  background-color: #4F9EBF;
 }
 
 .color-secondary {
@@ -3782,7 +3782,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 }
 
 .work-overlay {
-  position: absolute;
+  position: fixed;
   display: block;
   width: 100%;
   height: 100%;
@@ -3790,10 +3790,12 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   top: 0;
   padding-top: 64px;
   padding-bottom: 64px;
+  overflow: auto;
   -webkit-clip-path: circle(0 at center);
           clip-path: circle(0 at center);
   opacity: 0;
   pointer-events: none;
+  background-color: #FFFFFF;
   transition: all 1000ms ease;
 }
 

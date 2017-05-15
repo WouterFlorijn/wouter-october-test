@@ -63,22 +63,22 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {global.jQuery = global.$ = __webpack_require__(3);
-__webpack_require__(2);
+/* WEBPACK VAR INJECTION */(function(global) {global.jQuery = global.$ = __webpack_require__(4);
+__webpack_require__(3);
 
 $(function () {
 	$(document).foundation();
 });
 
-__webpack_require__(9);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+__webpack_require__(2);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 1 */
@@ -88,6 +88,21 @@ __webpack_require__(9);
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+var container = $('.work-container');
+
+$('.work-tile').on('click', function (event) {
+	var x = event.pageX - container.offset().left;
+	var y = event.pageY - container.offset().top;
+
+	var id = $(this).data('work');
+	var overlay = container.find('.work-overlay[data-work="' + id + '"]');
+	overlay.addClass('open');
+});
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 !function ($) {
@@ -10299,7 +10314,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 }(jQuery);
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -20559,7 +20574,7 @@ return jQuery;
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 var g;
@@ -20586,30 +20601,12 @@ module.exports = g;
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(0);
 module.exports = __webpack_require__(1);
 
-
-/***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
-/***/ (function(module, exports) {
-
-var container = $('.work-container');
-
-$('.work-tile').on('click', function (event) {
-	var x = event.pageX - container.offset().left;
-	var y = event.pageY - container.offset().top;
-
-	var id = $(this).data('work');
-	var overlay = container.find('.work-overlay[data-work="' + id + '"]');
-	overlay.addClass('open');
-});
 
 /***/ })
 /******/ ]);

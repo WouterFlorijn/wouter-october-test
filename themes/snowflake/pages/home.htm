@@ -115,9 +115,10 @@ function onStart()
 	</div>
 
 	{% for current_work in work %}
-		<div class="work-overlay" style="background-color: {{ current_work.background_color }}; color: {{ current_work.text_color }};" data-work="{{ current_work.id }}">
+		<div class="work-overlay" style="" data-work="{{ current_work.id }}">
 			<div class="row column">
 				<h3>{{ current_work.name }}</h3>
+				<div>{{current_work.description|raw }}</div>
 			</div>
 		</div>
 	{% endfor %}
