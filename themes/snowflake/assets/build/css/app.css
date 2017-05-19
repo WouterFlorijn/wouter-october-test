@@ -511,13 +511,13 @@ img {
 textarea {
   height: auto;
   min-height: 50px;
-  border-radius: 0;
+  border-radius: 4px;
 }
 
 select {
   box-sizing: border-box;
   width: 100%;
-  border-radius: 0;
+  border-radius: 4px;
 }
 
 .map_canvas img,
@@ -535,7 +535,7 @@ button {
      -moz-appearance: none;
           appearance: none;
   border: 0;
-  border-radius: 0;
+  border-radius: 4px;
   background: transparent;
   line-height: 1;
 }
@@ -557,7 +557,7 @@ pre {
 }
 
 .row {
-  max-width: 100rem;
+  max-width: 93.75rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2335,35 +2335,35 @@ h6 small {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.625rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.375rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -2435,7 +2435,7 @@ a img {
 
 hr {
   clear: both;
-  max-width: 100rem;
+  max-width: 93.75rem;
   height: 0;
   margin: 1.25rem auto;
   border-top: 0;
@@ -2525,6 +2525,7 @@ kbd {
   background-color: #D0D0D0;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   color: #000000;
+  border-radius: 4px;
 }
 
 .subheader {
@@ -2742,7 +2743,7 @@ p + .stat {
 table {
   width: 100%;
   margin-bottom: 32px;
-  border-radius: 0;
+  border-radius: 4px;
 }
 
 thead, tbody, tfoot {
@@ -2874,88 +2875,6 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   display: inline-block;
   vertical-align: middle;
   font-weight: bold;
-}
-
-.has-tip {
-  position: relative;
-  display: inline-block;
-  border-bottom: dotted 1px #303030;
-  font-weight: bold;
-  cursor: help;
-}
-
-.tooltip {
-  position: absolute;
-  top: calc(100% + 0.6495rem);
-  z-index: 1200;
-  max-width: 10rem;
-  padding: 0.75rem;
-  border-radius: 0;
-  background-color: #000000;
-  font-size: 80%;
-  color: #FFFFFF;
-}
-
-.tooltip::before {
-  display: block;
-  width: 0;
-  height: 0;
-  border: inset 0.75rem;
-  content: '';
-  border-top-width: 0;
-  border-bottom-style: solid;
-  border-color: transparent transparent #000000;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.tooltip.top::before {
-  display: block;
-  width: 0;
-  height: 0;
-  border: inset 0.75rem;
-  content: '';
-  border-bottom-width: 0;
-  border-top-style: solid;
-  border-color: #000000 transparent transparent;
-  top: 100%;
-  bottom: auto;
-}
-
-.tooltip.left::before {
-  display: block;
-  width: 0;
-  height: 0;
-  border: inset 0.75rem;
-  content: '';
-  border-right-width: 0;
-  border-left-style: solid;
-  border-color: transparent transparent transparent #000000;
-  top: 50%;
-  bottom: auto;
-  left: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.tooltip.right::before {
-  display: block;
-  width: 0;
-  height: 0;
-  border: inset 0.75rem;
-  content: '';
-  border-left-width: 0;
-  border-right-style: solid;
-  border-color: transparent #000000 transparent transparent;
-  top: 50%;
-  right: 100%;
-  bottom: auto;
-  left: auto;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .hide {
@@ -3156,8 +3075,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   display: none;
 }
 
-.one-line {
-  overflow: hidden;
+.one-line, .tooltip {
   white-space: nowrap;
 }
 
@@ -3472,7 +3390,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   position: relative;
 }
 
-.pos-absolute, .center-v, .hero-content, .center-h, .center {
+.pos-absolute, .center-v, .hero-content, .center-h, .tooltip, .center {
   position: absolute;
 }
 
@@ -3486,7 +3404,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
           transform: translateY(-50%);
 }
 
-.center-h {
+.center-h, .tooltip {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -3595,8 +3513,8 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   background-color: #FFFFFF;
 }
 
-.radius {
-  border-radius: 0;
+.radius, .tooltip {
+  border-radius: 4px;
 }
 
 .round, .work-tile {
@@ -3695,12 +3613,15 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   src: url("../../fonts/pier-sans-bold-italic.otf");
 }
 
+.noise, .hero {
+  background-image: url("../../img/textures/noise.png");
+}
+
 .hero {
   display: block;
   position: relative;
   height: 100vh;
   background-color: #D0D0D0;
-  background-image: url("../../img/textures/noise.png");
 }
 
 .hero-container {
@@ -3767,6 +3688,50 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   margin-right: 16px;
 }
 
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tooltip {
+  display: block;
+  top: calc(100% + 16px);
+  padding: 8px 16px;
+  width: auto;
+  background-color: #FFFFFF;
+  color: #303030;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+
+.tooltip::after, .tooltip::before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border: solid transparent;
+  content: " ";
+}
+
+.tooltip::after {
+  border-bottom-color: #FFFFFF;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.tooltip::before {
+  border-bottom-color: transparent;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
 .work-container {
   position: relative;
   display: block;
@@ -3804,4 +3769,8 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
           clip-path: circle(100% at center);
   opacity: 1;
   pointer-events: auto;
+}
+
+.test {
+  background-color: #ff6754;
 }

@@ -47,7 +47,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1600);
+$global-width: rem-calc(1500);
 $global-lineheight: 1.25;
 $foundation-palette: (
   primary:   #4F9EBF, // #0AA5CC
@@ -69,7 +69,7 @@ $global-margin: space(medium);
 $global-padding: space(medium);
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 4px;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
@@ -113,11 +113,11 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 16),
-    'h4': ('font-size': 16),
-    'h5': ('font-size': 16),
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 26),
+    'h3': ('font-size': 22),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
     'h6': ('font-size': 16),
   ),
   medium: (

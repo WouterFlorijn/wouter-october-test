@@ -39,3 +39,7 @@
 		pointer-events: auto;
 	}
 }
+
+.test {
+	background-color: accent($alert-color);
+}

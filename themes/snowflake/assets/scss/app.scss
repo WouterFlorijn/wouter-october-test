@@ -8,6 +8,7 @@
 @import 'helpers/variables/colors';
 @import 'helpers/variables/space';
 @import 'helpers/functions/assets';
+@import 'helpers/functions/colors';
 
 // Cornerstone post.
 @import 'cornerstone/scss/import-post';
@@ -16,7 +17,9 @@
 @import 'media/fonts';
 
 // My components.
-@import 'components/typography';
+@import 'core/typography';
+@import 'core/textures';
 @import 'components/hero';
 @import 'components/icons';
+@import 'components/tooltips';
 @import 'components/work';

@@ -1,0 +1,26 @@
+.tooltip-container {
+	position: relative;
+
+	&:hover .tooltip {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+.tooltip {
+	@extend .center-h, .radius, .one-line;
+
+	display: block;
+	top: calc(100% + 16px);
+	padding: space(tiny) space(small);
+	width: auto;
+
+	background-color: $white;
+	color: $dark-gray;
+	opacity: 0;
+	pointer-events: none;
+
+	transition: opacity $transition-time $transition-function;
+
+	@include arrow(top, 8px, $white);
+}
