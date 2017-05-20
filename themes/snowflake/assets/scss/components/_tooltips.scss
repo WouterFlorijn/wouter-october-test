@@ -23,4 +23,14 @@
 	transition: opacity $transition-time $transition-function;
 
 	@include arrow(top, 8px, $white);
+
+	@each $name, $color in $palette {
+		&.color-#{$name} {
+			color: $color;
+		}
+		&.bg-#{$name} {
+			background-color: $color;
+			@include arrow(top, 8px, $color);
+		}
+	}
 }

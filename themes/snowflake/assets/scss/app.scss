@@ -7,6 +7,7 @@
 // My helpers.
 @import 'helpers/variables/colors';
 @import 'helpers/variables/space';
+@import 'helpers/variables/transitions';
 @import 'helpers/functions/assets';
 @import 'helpers/functions/colors';
 
@@ -22,4 +23,5 @@
 @import 'components/hero';
 @import 'components/icons';
 @import 'components/tooltips';
+@import 'components/contact';
 @import 'components/work';

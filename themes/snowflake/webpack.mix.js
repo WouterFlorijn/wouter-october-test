@@ -31,6 +31,8 @@ mix.options({
 mix.js('assets/js/app.js', 'js/app.js');
 mix.sass('assets/scss/app.scss', 'css/app.css', { includePaths: scssPaths });
 
+mix.copy('node_modules/font-awesome/fonts/font-awesome.ttf', 'fonts/font-awesome.ttf');
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

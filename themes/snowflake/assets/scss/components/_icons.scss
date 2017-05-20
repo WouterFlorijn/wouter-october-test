@@ -22,3 +22,11 @@
 		margin-right: space(small);
 	}
 }
+
+.icon-hover {
+	transition: transform $transition-time $transition-function;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}

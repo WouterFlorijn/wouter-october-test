@@ -1,0 +1,47 @@
+.contact-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.contact-text {
+	margin: 0;
+	line-height: space(large);
+}
+
+.contact-shape {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.contact-bg {
+	@extend .contact-shape;
+	
+	width: 100%;
+
+	background-color: $primary-color;
+}
+
+.contact-shape1 {
+	@extend .contact-shape;
+
+	width: 50%;
+	background-color: accent($primary-color, 1);
+	@include arrow(right, space(large) * 1.5, accent($primary-color, 1));
+}
+.contact-shape2 {
+	@extend .contact-shape;
+
+	width: 40%;
+	background-color: accent($primary-color, 2);
+	@include arrow(right, space(large) * 1.5, accent($primary-color, 2));
+}
+.contact-shape3 {
+	@extend .contact-shape;
+
+	width: 30%;
+	background-color: accent($primary-color);
+	@include arrow(right, space(large) * 1.5, accent($primary-color));
+}
