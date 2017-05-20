@@ -6,9 +6,21 @@
 .contact-text {
 	margin: 0;
 	line-height: space(large);
+
+	@include breakpoint(medium down) {
+		margin-bottom: space(medium);
+	}
 }
 
-.contact-shape {
+.contact-bg {
+	@extend .contact-part;
+	
+	width: 100%;
+
+	background-color: $primary-color;
+}
+
+.contact-part {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -16,32 +28,45 @@
 	z-index: -1;
 }
 
-.contact-bg {
-	@extend .contact-shape;
-	
-	width: 100%;
+.contact-shape {
+	@extend .contact-part;
 
-	background-color: $primary-color;
+	@include breakpoint(medium down) {
+		transform: skewX(-20deg);
+		left: -#{space(huge)};
+	}
 }
 
 .contact-shape1 {
 	@extend .contact-shape;
 
-	width: 50%;
+	width: 90%;
 	background-color: accent($primary-color, 1);
-	@include arrow(right, space(large) * 1.5, accent($primary-color, 1));
+
+	@include breakpoint(large up) {
+		width: 50%;
+		@include arrow(right, space(large) * 1.5, accent($primary-color, 1));
+	}
 }
 .contact-shape2 {
 	@extend .contact-shape;
 
-	width: 40%;
+	width: 70%;
 	background-color: accent($primary-color, 2);
-	@include arrow(right, space(large) * 1.5, accent($primary-color, 2));
+
+	@include breakpoint(large up) {
+		width: 40%;
+		@include arrow(right, space(large) * 1.5, accent($primary-color, 2));
+	}
 }
 .contact-shape3 {
 	@extend .contact-shape;
 
-	width: 30%;
+	width: 50%;
 	background-color: accent($primary-color);
-	@include arrow(right, space(large) * 1.5, accent($primary-color));
+
+	@include breakpoint(large up) {
+		width: 30%;
+		@include arrow(right, space(large) * 1.5, accent($primary-color));
+	}
 }

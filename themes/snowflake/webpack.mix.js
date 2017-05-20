@@ -13,6 +13,7 @@ let mix = require('laravel-mix');
 
 var scssPaths = [
 	'node_modules/foundation-sites/scss',
+	'node_modules/font-awesome/scss',
 	'node_modules/@wouterflorijn',
 	'vendor'
 ];
@@ -31,7 +32,7 @@ mix.options({
 mix.js('assets/js/app.js', 'js/app.js');
 mix.sass('assets/scss/app.scss', 'css/app.css', { includePaths: scssPaths });
 
-mix.copy('node_modules/font-awesome/fonts/font-awesome.ttf', 'fonts/font-awesome.ttf');
+mix.copyDirectory('node_modules/font-awesome/fonts', 'assets/fonts');
 
 // Full API
 // mix.js(src, output);
