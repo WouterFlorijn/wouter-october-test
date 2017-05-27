@@ -1,0 +1,13 @@
+a {
+	transition: color $transition-time $transition-function;
+
+	@each $name, $color in $palette {
+		&.link-#{$name} {
+			color: $color;
+
+			&:hover, &:active, &:focus, &:active {
+				color: accent($color);
+			}
+		}
+	}
+}

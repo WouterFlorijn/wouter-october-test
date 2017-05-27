@@ -1,0 +1,19 @@
+.button {
+	display: inline-block;
+	height: space(large);
+	line-height: space(large);
+	padding: 0 space(medium);
+
+	@each $name, $color in $palette {
+		&.button-#{$name} {
+			background-color: $color;
+		}
+		&.color-#{$name} {
+			color: $color;
+
+			&:hover, &:active, &:focus, &:active {
+				color: $color;
+			}
+		}
+	}
+}

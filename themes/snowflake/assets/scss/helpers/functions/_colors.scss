@@ -1,5 +1,8 @@
 @function accent($color, $level: 3) {
 	$lightness: (100% - lightness($color)) / 10 * $level;
-	$saturation: $level * 10%;
+	$saturation: 0;
+	@if (saturation($color) > 0) {
+		$saturation: $level * 10%;
+	}
 	@return saturate(lighten($color, $lightness), $saturation);
 }

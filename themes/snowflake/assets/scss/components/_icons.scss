@@ -1,5 +1,6 @@
 .icon {
 	display: inline-block;
+	vertical-align: middle;
 
 	@each $name, $color in $palette {
 		&.color-#{$name} {
@@ -34,7 +35,7 @@
 }
 
 .icon-hover {
-	transition: transform $transition-time $transition-function;
+	transition: all $transition-time $transition-function;
 
 	&:hover {
 		transform: scale(1.1);

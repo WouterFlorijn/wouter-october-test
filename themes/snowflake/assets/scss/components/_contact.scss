@@ -12,6 +12,10 @@
 	}
 }
 
+.contact-icon {
+	@extend .icon-small, .icon-space, .icon-hover, .icon-fa-container, .color-primary, .no-margin-bottom;
+}
+
 .contact-bg {
 	@extend .contact-part;
 	
@@ -40,7 +44,7 @@
 .contact-shape1 {
 	@extend .contact-shape;
 
-	width: 90%;
+	width: 95%;
 	background-color: accent($primary-color, 1);
 
 	@include breakpoint(large up) {
@@ -62,7 +66,7 @@
 .contact-shape3 {
 	@extend .contact-shape;
 
-	width: 50%;
+	width: 45%;
 	background-color: accent($primary-color);
 
 	@include breakpoint(large up) {
